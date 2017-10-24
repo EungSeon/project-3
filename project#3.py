@@ -16,10 +16,11 @@ print(data[begin:begin+100])
 print(data[end-100:end])
 print("length =", end-begin)
 
+
 speech = data[begin:end]
 speech = speech.replace("<br/>", "")
 speech = speech.replace("&nbsp", "")
-speech = speech.split()
+speech = speech.split()     # str을 list로 만들어줌 단어별
 
 # sort
 
